@@ -30,3 +30,8 @@ const Navitems = () => {
     )
 }
 export default Navitems
+
+// why did we use li there?
+// for semantics and accessibility, it helps screen readers and other assistive technologies understand the structure of the navigation menu better.
+// is it mostly used for menu like structures?
+// yes, it is mostly used for menu-like structures, lists of links, or any other grouped items in a web page.
