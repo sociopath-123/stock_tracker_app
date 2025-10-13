@@ -1,9 +1,8 @@
 "use client";
-
-import Link from "next/link";
 import Image from "next/image";
-import Navitems from "@/components/Navitems";
-import UserDropdown from "@/components/UserDropdown";
+import Link from "next/link";
+import Navitems from "./Navitems";
+import UserDropdown from "./UserDropdown";
 
 const Header = () => {
     return (
