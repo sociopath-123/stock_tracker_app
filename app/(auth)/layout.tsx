@@ -23,7 +23,7 @@ const Layout = ({children}: {children: React.ReactNode}) => {
 
             <div className={"z-10 relative lg:mt-4 lg:mb-10"}>
                 <blockquote className={"auth-blockquote"}>
-             Signalist turned my watchlist into a winning list.The alerts are spot-on,and i feel more confident making moves in market.
+                Signalist turned my watchlist into a winning list.The alerts are spot-on,and i feel more confident making moves in market.
                 </blockquote>
 
                 <div className={"flex items-center justify-between"}>
