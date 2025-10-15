@@ -35,7 +35,8 @@ yarn-error.log*
 
 # vercel
 .vercel
-
+LEARNING.md
+# here LEARNING.md is ignored because it contains sensitive information
 # typescript
 *.tsbuildinfo
 next-env.d.ts
