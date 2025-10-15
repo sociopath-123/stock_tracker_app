@@ -1,4 +1,4 @@
-import {Button} from "@/components/ui/button";
+
 import TradingViewWidget from "@/components/TradingViewWidget";
 import {
     HEATMAP_WIDGET_CONFIG,
@@ -6,7 +6,7 @@ import {
     MARKET_OVERVIEW_WIDGET_CONFIG,
     TOP_STORIES_WIDGET_CONFIG
 } from "@/lib/constants";
-import {Fragment} from "react";
+
 
 
 const Home = () => {
@@ -18,9 +18,9 @@ const Home = () => {
                     <TradingViewWidget
                         title="Market Overview"
                         scriptUrl="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
-                             config={MARKET_OVERVIEW_WIDGET_CONFIG}
-                            className="custom-chart"
-                             height={ 600}                   />
+                        config={MARKET_OVERVIEW_WIDGET_CONFIG}
+                        className="custom-chart"
+                        height={ 600}                   />
 
                 </div>
                 <div className="md-col-span-1 xl:col-span-2">
@@ -61,4 +61,3 @@ const Home = () => {
     )
 }
 export default Home
-
