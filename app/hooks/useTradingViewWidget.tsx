@@ -10,10 +10,7 @@ const useTradingViewWidget = (scriptUrl: string, config: Record<string, unknown>
             if(containerRef.current.dataset.loaded) return;  // when component is remounted, it should not load the script again
             // which means it is already loaded(the widget is already there)
 
-            containerRef.current.innerHTML = `<div class="tradingview-widget-container__widget" style="width: 100%; height: ${height}px;"></div>`
-                // what does this script do? it loads the tradingview widget
-            // Deep explanation is that .innerHTML is a property of an HTML element that allows you to get or set the HTML content inside that element as a string.
-
+            containerRef.current.innerHTML = `<div class="tradingview-widget-container__widget" style="width: 100%; height: ${height}px"></div>`
 
             const script = document.createElement("script");
             script.src = scriptUrl;

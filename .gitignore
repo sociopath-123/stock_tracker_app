@@ -34,8 +34,10 @@ yarn-error.log*
 .env*
 # this line ignores all env files, including .env.local, .env.development.local, .env.test.local, .env.production.local
 
-# But i want to commit .env.example file
-!/.env.example  # this line negates the previous line for .env.example file, so it will not be ignored and can be committed to the repository.
+
+!/.env.example
+
+ # this line negates the previous line for .env.example file, so it will not be ignored and can be committed to the repository.
 # vercel
 .vercel
 LEARNING.md
