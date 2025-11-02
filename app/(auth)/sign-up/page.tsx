@@ -8,6 +8,7 @@ import SelectField from "@/components/forms/selectField";
 import {INVESTMENT_GOALS, PREFERRED_INDUSTRIES, RISK_TOLERANCE_OPTIONS} from "@/lib/constants";
 import {CountrySelectField} from "@/components/forms/CountrySelectField";
 import FooterLink from "@/components/forms/FooterLink";
+import TextPressure from "@/components/TextPressure";
 
 
 const SignUp = () => {
@@ -46,7 +47,20 @@ const SignUp = () => {
 
     return (
         <>
-        <h1 className={"form-title"}> Sign Up & Personalize</h1>
+            <div style={{position: 'relative', height: '180px'}}>
+                <TextPressure
+                    text="Sign Up & Personalize"
+                    flex={true}
+                    alpha={false}
+                    stroke={false}
+                    width={true}
+                    weight={true}
+                    italic={true}
+                    textColor="#ffffff"
+                    strokeColor="#ff0000"
+                    minFontSize={35}
+                />
+            </div>
             <form onSubmit={handleSubmit(onSubmit)} className={"space-y-5 "}>
 
                 <InputField

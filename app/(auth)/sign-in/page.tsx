@@ -4,6 +4,7 @@ import {useForm} from "react-hook-form";
 import InputField from "@/components/forms/inputField";
 import {Button} from "@/components/ui/button";
 import FooterLink from "@/components/forms/FooterLink";
+import TextPressure from "@/components/TextPressure";
 
 const SignIn = () => {
 
@@ -31,9 +32,24 @@ const SignIn = () => {
 
     return (
        <>
-           <h1 className={"form-title"}> Welcome back</h1>
+           <div style={{position: 'relative', height: '200px'}}>
+               <TextPressure
+                   text="Welcome back!"
+                   flex={true}
+                   alpha={false}
+                   stroke={false}
+                   width={true}
+                   weight={true}
+                   italic={true}
+                   textColor="#ffffff"
+                   strokeColor="#ff0000"
+                   minFontSize={36}
+               />
 
-           <form onSubmit={handleSubmit(onSubmit)} className={"space-y-5"}>
+           </div>
+
+
+           <form onSubmit={handleSubmit(onSubmit)} className={"space-y-2"}>
 
                <InputField
                 name={"email"}
