@@ -7,6 +7,7 @@ import {
     TOP_STORIES_WIDGET_CONFIG
 } from "@/lib/constants";
 
+import AnimatedContent from "@/components/AnimatedContent";
 
 
 const Home = () => {
@@ -15,26 +16,74 @@ const Home = () => {
         <div className="flex min-h-screen home-wrapper">
             <section className="grid w-full gap-8 home-section">
 
-                <div className="md-col-span-1 xl:col-span-2">
-                    <TradingViewWidget
-                        title="Stock Heatmap"
-                        scriptUrl="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js"
-                        config={HEATMAP_WIDGET_CONFIG}
 
-                        height={ 600}
-                    />
+
+
+                <div className="md-col-span-1 xl:col-span-2">
+
+                    <AnimatedContent
+                        distance={150}
+                        direction="vertical"
+                        reverse={false}
+                        duration={1.2}
+                        ease="power3.out"
+                        initialOpacity={0.2}
+                        animateOpacity
+                        scale={1.1}
+                        threshold={0.2}
+                        delay={0.3}
+                    >
+                        <div>
+                            <>
+                                <TradingViewWidget
+                                    title="Stock Heatmap"
+                                    scriptUrl="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js"
+                                    config={HEATMAP_WIDGET_CONFIG}
+
+                                    height={ 600}
+                                />
+
+
+                            </>
+
+
+                        </div>
+                    </AnimatedContent>
+
 
                 </div>
 
                 <div className="md:col-span-1 xl:col-span-1">
-                    <TradingViewWidget
-                        title="Market Overview"
-                        scriptUrl="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
-                        config={MARKET_OVERVIEW_WIDGET_CONFIG}
-                        className="custom-chart"
-                        height={ 600}
 
-                    />
+
+                    <AnimatedContent
+                        distance={150}
+                        direction="vertical"
+                        reverse={false}
+                        duration={1.2}
+                        ease="power3.out"
+                        initialOpacity={0.2}
+                        animateOpacity
+                        scale={1.1}
+                        threshold={0.2}
+                        delay={0.3}
+                    >
+                        <div>
+                            <>
+                                <TradingViewWidget
+                                    title="Market Overview"
+                                    scriptUrl="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
+                                    config={MARKET_OVERVIEW_WIDGET_CONFIG}
+                                    className="custom-chart"
+                                    height={ 600}
+
+                                />
+                            </>
+
+
+                        </div>
+                    </AnimatedContent>
+
 
                 </div>
 
@@ -43,22 +92,64 @@ const Home = () => {
 
             <section className="grid w-full gap-8 home-section">
                 <div className="md:col-span-1 xl:col-span-1">
-                    <TradingViewWidget
 
-                        scriptUrl="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js"
-                        config={TOP_STORIES_WIDGET_CONFIG}
-                        className="custom-chart"
-                        height={ 600}                   />
+
+                    <AnimatedContent
+                        distance={150}
+                        direction="vertical"
+                        reverse={false}
+                        duration={1.2}
+                        ease="power3.out"
+                        initialOpacity={0.2}
+                        animateOpacity
+                        scale={1.1}
+                        threshold={0.2}
+                        delay={0.3}
+                    >
+                        <div>
+                            <>
+                                <TradingViewWidget
+
+                                    scriptUrl="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js"
+                                    config={TOP_STORIES_WIDGET_CONFIG}
+                                    className="custom-chart"
+                                    height={ 600}                   />
+
+
+                            </>
+                        </div>
+                    </AnimatedContent>
 
                 </div>
                 <div className="md-col-span-1 xl:col-span-2">
-                    <TradingViewWidget
 
-                        scriptUrl="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js"
-                        config={MARKET_DATA_WIDGET_CONFIG}
+                    <AnimatedContent
+                        distance={150}
+                        direction="vertical"
+                        reverse={false}
+                        duration={1.2}
+                        ease="power3.out"
+                        initialOpacity={0.2}
+                        animateOpacity
+                        scale={1.1}
+                        threshold={0.2}
+                        delay={0.3}
+                    >
+                        <div>
+                            <>
+                                <TradingViewWidget
 
-                        height={ 600}
-                    />
+                                    scriptUrl="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js"
+                                    config={MARKET_DATA_WIDGET_CONFIG}
+
+                                    height={ 600}
+                                />
+
+                            </>
+                        </div>
+                    </AnimatedContent>
+
+
 
                 </div>
             </section>
